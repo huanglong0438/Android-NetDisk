@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+    <RelativeLayout 
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/radiogroup_bg1"
+      android:padding="5.0dip">
+      <ImageButton 
+          android:id="@+id/MenuAddGridView_button_openfolder"
+          android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:layout_marginLeft="10.0dip"
+          android:src="@drawable/radiogroup_openfolder"
+          android:adjustViewBounds="true"
+          android:padding="10.0dip"
+          android:layout_alignParentLeft="true"/>
+     <ImageButton 
+          android:id="@+id/MenuAddGridView_button_addSingle"
+          android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:layout_marginLeft="10.0dip"
+          android:src="@drawable/radiogroup_addsingle"
+          android:adjustViewBounds="true"
+          android:padding="10.0dip"
+          android:layout_toRightOf="@id/MenuAddGridView_button_openfolder"/>
+     <ImageButton 
+          android:id="@+id/MenuAddGridView_button_addFolder"
+          android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:layout_marginLeft="10.0dip"
+          android:src="@drawable/radiogroup_addfolder"
+          android:adjustViewBounds="true"
+          android:padding="10.0dip"
+          android:layout_toRightOf="@id/MenuAddGridView_button_addSingle"/>
+     <ImageButton 
+          android:id="@+id/MenuAddGridView_button_backFolder"
+          android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:layout_marginRight="10.0dip"
+          android:src="@drawable/radiogroup_backfolder"
+          android:adjustViewBounds="true"
+          android:padding="10.0dip"
+          android:layout_alignParentRight="true"/>               
+    </RelativeLayout>  
+    <GridView 
+        android:id="@+id/MenuAddGridView_gridview"
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:columnWidth="90dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+    />
+
+</LinearLayout>
