@@ -1,4 +1,3 @@
-# Android
-This is for android program.
+# Android-NetDisk
 
-This is the first edition of my graduation project.I'm unfamiliar to Android programming.And I'm still learning it.
+大学的毕业设计，目前是刚开始的时候试做的版本，后面又做了改进，但是没有上传，准备进行一段时间的自学后再重做。
